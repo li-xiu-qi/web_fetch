@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='web_fetch',
-    version='0.1.0',
+    version='0.1.1.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -16,8 +16,8 @@ setup(
     entry_points={
         
     },
-    author='Your Name',
-    author_email='your.email@example.com',
+    author='li-xiu-qi',
+    author_email='lixiuqixiaoke@qq.com',
     description='A package to fetch web resources and cache HTML content.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

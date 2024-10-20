@@ -204,7 +204,7 @@ class ZhiPuWebSearch:
 
             return [SearchResult(
                 url=search_result.get("link", ""),
-                favicon="https://www.nepu.edu.cn/favicon.ico",
+                favicon=favicon_url,,
                 media=search_result.get("media", ""),
                 title=search_result.get("title", ""),
                 description=search_result.get("content", "")
