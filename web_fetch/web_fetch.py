@@ -162,6 +162,8 @@ class HTMLFetcher:
 class ZhiPuWebSearch:
     def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.getenv("API_KEY")
+        if self.api_key is None:
+            raise ValueError("API_KEY is required")
 
     def _get_favicon_url(self, school_site: str) -> str:
         https_url = f"https://{school_site}/favicon.ico"
@@ -204,7 +206,7 @@ class ZhiPuWebSearch:
 
             return [SearchResult(
                 url=search_result.get("link", ""),
-                favicon=favicon_url,,
+                favicon=favicon_url,
                 media=search_result.get("media", ""),
                 title=search_result.get("title", ""),
                 description=search_result.get("content", "")
