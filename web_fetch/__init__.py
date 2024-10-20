@@ -1,2 +1,2 @@
-from web_fetch.web_fetch import WebFetch
+from web_fetch.web_fetch import ZhiPuWebSearch
 
