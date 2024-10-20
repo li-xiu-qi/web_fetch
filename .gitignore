@@ -183,5 +183,6 @@ app/temp
 caches
 md
 html_cache
+web_fetch/html_cache
 
 # End of https://www.toptal.com/developers/gitignore/api/python
