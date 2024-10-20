@@ -182,6 +182,6 @@ config/rag_config.py
 app/temp
 caches
 md
-html_cache/
+html_cache
 
 # End of https://www.toptal.com/developers/gitignore/api/python
